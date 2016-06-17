@@ -47,11 +47,10 @@ add_message_files(
   FILES
   Marker.msg
   MarkerDetection.msg
-  Marker.msg
   MarkerStamped.msg
   MarkerWithCovariance.msg
+  MarkerWithCovarianceArray.msg
   MarkerWithCovarianceStamped.msg
-  Markers.msg
 )
 ## Generate services in the 'srv' folder
 # add_service_files(
