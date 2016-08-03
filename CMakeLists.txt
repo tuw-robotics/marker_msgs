@@ -46,6 +46,8 @@ add_message_files(
   DIRECTORY msg
   FILES
   Marker.msg
+  MarkerCandidate.msg
+  MarkerCandidateArray.msg
   MarkerDetection.msg
   MarkerStamped.msg
   MarkerWithCovariance.msg
