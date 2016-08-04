@@ -9,4 +9,5 @@ geometry_msgs/Quaternion view_direction       # view direction
 float32 fov_horizontal                        # field of view horizontal [rad]
 float32 fov_vertical                          # field of view vertical [rad]
 
+string   type                  # marker type used (bch, artag, mip_36h12, stage, ...)
 Marker[] markers               # detected markers
