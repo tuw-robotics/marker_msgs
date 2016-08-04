@@ -1,3 +1,11 @@
+# Time of image acquisition, camera coordinate frame ID
+Header header    # Header timestamp should be acquisition time of image
+                 # Header frame_id should be optical frame of camera
+                 # origin of frame should be optical center of camera
+                 # +x should point to the right in the image
+                 # +y should point down in the image
+                 # +z should point into the plane of the image
+                 
 # The distortion parameters, size depending on the distortion model.
 # For "plumb_bob", the 5 parameters are: (k1, k2, t1, t2, k3).
 float64[] cameraD
