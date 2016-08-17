@@ -2,8 +2,8 @@
 Changelog for package marker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2016-08-17)
+------------------
 * detection type added
 * Contributors: Markus Bader
 
