@@ -2,8 +2,8 @@
 Changelog for package marker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.4 (2016-08-18)
+------------------
 * build system cleanup
 * Contributors: Markus Bader
 
