@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>marker_msgs</name>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <description>
     The marker_msgs package contains messages usable to setup a marker/fiducial system. 
     The package distinguishes between two types of messages. 

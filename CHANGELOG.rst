@@ -2,8 +2,8 @@
 Changelog for package marker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2016-09-30)
+------------------
 * new msgs
 * Removed MarkerCandidate messages. Use Fiducial.msg and FiducialDetection.msg instead.
 * Changed MarkerCandidate* to Fiducial*
