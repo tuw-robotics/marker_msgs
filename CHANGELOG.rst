@@ -2,6 +2,21 @@
 Changelog for package marker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* new msgs
+* Removed MarkerCandidate messages. Use Fiducial.msg and FiducialDetection.msg instead.
+* Changed MarkerCandidate* to Fiducial*
+* Fiducial msg added
+* Fiducial msg added
+* gitignore added
+* Merge branch 'master' into devel
+* header to msg/MarkerCandidate.msg added
+* merge
+* Added MarkerCandidate/Array messages.
+* marker_msg type added
+* Contributors: Markus Bader, Markus Bader @ munin, doctorseus
+
 0.0.4 (2016-08-18)
 ------------------
 * build system cleanup
