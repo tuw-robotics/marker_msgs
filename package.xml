@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>marker_msgs</name>
   <version>0.0.5</version>
   <description>
     The marker_msgs package contains messages usable to setup a marker/fiducial system. 
     The package distinguishes between two types of messages. 
     First messages to describe the properties of a marker/fiducial detection system and the detected markers. 
-    Secondly messages used to represent a map of markers/features with covariances as it would be produced by a SLAM system or published by a map server for self-localization..
+    Secondly messages used to represent a map of markers/features with covariances as it would be produced by a SLAM system or published by a map server for self-localization.
   </description>
   <maintainer email="markus.bader@tuwien.ac.at">Markus Bader</maintainer>
   <license>BSD</license>
@@ -20,9 +20,9 @@
   <build_depend>std_msgs</build_depend>
   <build_depend>geometry_msgs</build_depend>
 
-  <run_depend>message_runtime</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>geometry_msgs</run_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
