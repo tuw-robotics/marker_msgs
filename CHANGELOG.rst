@@ -2,8 +2,8 @@
 Changelog for package marker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.8 (2023-01-22)
+------------------
 * updated for ros2
 * Update MarkerDetection.msg
 * Update README.md
