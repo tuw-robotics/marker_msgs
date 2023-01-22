@@ -1,5 +1,5 @@
 # This expresses a marker/fiducial detection
-Header header                  # timestamp in the header is the acquisition time and frame
+std_msgs/Header header                  # timestamp in the header is the acquisition time and frame
 
 float32 distance_min           # distance minimum range value [m]
 float32 distance_max           # distance maximum range value [m]
@@ -11,4 +11,4 @@ float32 fov_horizontal                        # field of view horizontal [rad]
 float32 fov_vertical                          # field of view vertical [rad]
 
 string   type                  # marker type used (bch, artag, mip_36h12, reflectors, stage, ...)
-Marker[] markers               # detected markers
+marker_msgs/Marker[] markers               # detected markers

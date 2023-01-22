@@ -1,3 +1,3 @@
 # An marker with reference coordinate frame and timestamp
-Header header
-Marker marker
+std_msgs/Header header
+marker_msgs/Marker marker

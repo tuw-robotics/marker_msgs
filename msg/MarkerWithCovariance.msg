@@ -1,6 +1,6 @@
 # This expresses a marker in free space with uncertainty.
 
-Marker marker
+marker_msgs/Marker marker
 
 # Row-major representation of the 6x6 covariance matrix
 # The orientation parameters use a fixed-axis representation.

@@ -1,20 +1,38 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
+
 project(marker_msgs)
 
-find_package(catkin REQUIRED COMPONENTS geometry_msgs message_generation std_msgs)
+# Default to C++14
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-add_message_files(
-  DIRECTORY msg
-  FILES
-  Marker.msg
-  Fiducial.msg
-  FiducialDetection.msg
-  MarkerDetection.msg
-  MarkerStamped.msg
-  MarkerWithCovariance.msg
-  MarkerWithCovarianceArray.msg
-  MarkerWithCovarianceStamped.msg)
-  
-generate_messages(DEPENDENCIES  geometry_msgs std_msgs)
+find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
-catkin_package(CATKIN_DEPENDS geometry_msgs message_runtime std_msgs)
+set(msg_files
+  "msg/Marker.msg"
+  "msg/Fiducial.msg"
+  "msg/FiducialDetection.msg"
+  "msg/MarkerDetection.msg"
+  "msg/MarkerStamped.msg"
+  "msg/MarkerWithCovariance.msg"
+  "msg/MarkerWithCovarianceArray.msg"
+  "msg/MarkerWithCovarianceStamped.msg"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  DEPENDENCIES builtin_interfaces geometry_msgs std_msgs
+  ADD_LINTER_TESTS
+)
+
+ament_export_dependencies(rosidl_default_runtime)
+
+ament_package()
